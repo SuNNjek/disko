@@ -8,7 +8,7 @@ declare disko_config
 
 # mount was chosen as the default mode because it's less destructive
 mode=mount
-nix_args=()
+nix_args=(--extra-experimental-features pipe-operators)
 skip_destroy_safety_check=false
 
 # DISKO_VERSION is set by the wrapper in package.nix
